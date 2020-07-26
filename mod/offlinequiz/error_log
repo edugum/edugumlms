@@ -1,0 +1,77 @@
+[16-Apr-2018 05:31:57 America/New_York] SELECT CONCAT(u.id, '#', COALESCE(qa.usageid, 0)) AS uniqueid,
+        qa.id AS resultid, u.id, qa.usageid, qa.offlinegroupid, qa.status,
+        u.id AS userid, u.firstname, u.lastname,
+        u.alternatename, u.middlename, u.firstnamephonetic, u.lastnamephonetic,
+        u.picture, u.idnumber,
+        qa.sumgrades, qa.timefinish, qa.timestart, qa.timefinish - qa.timestart AS duration  FROM {user} u
+                  JOIN {role_assignments} ra ON ra.userid = u.id
+             LEFT JOIN {offlinequiz_results} qa ON u.id = qa.userid AND qa.offlinequizid = :offlinequizid
+              WHERE ra.contextid IN (:ctx14,:ctx15,:ctx16) AND ra.roleid = :role17  AND qa.userid IS NOT NULL
+                                AND qa.status = 'complete'  ORDER BY u.lastname, u.id 
+[16-Apr-2018 05:32:06 America/New_York] SELECT CONCAT(u.id, '#', COALESCE(qa.usageid, 0)) AS uniqueid,
+        qa.id AS resultid, u.id, qa.usageid, qa.offlinegroupid, qa.status,
+        u.id AS userid, u.firstname, u.lastname,
+        u.alternatename, u.middlename, u.firstnamephonetic, u.lastnamephonetic,
+        u.picture, u.idnumber,
+        qa.sumgrades, qa.timefinish, qa.timestart, qa.timefinish - qa.timestart AS duration  FROM {user} u
+                  JOIN {role_assignments} ra ON ra.userid = u.id
+             LEFT JOIN {offlinequiz_results} qa ON u.id = qa.userid AND qa.offlinequizid = :offlinequizid
+              WHERE ra.contextid IN (:ctx14,:ctx15,:ctx16) AND ra.roleid = :role17  ORDER BY u.lastname, u.id 
+[16-Apr-2018 06:10:36 America/New_York] SELECT CONCAT(u.id, '#', COALESCE(qa.usageid, 0)) AS uniqueid,
+        qa.id AS resultid, u.id, qa.usageid, qa.offlinegroupid, qa.status,
+        u.id AS userid, u.firstname, u.lastname,
+        u.alternatename, u.middlename, u.firstnamephonetic, u.lastnamephonetic,
+        u.picture, u.idnumber,
+        qa.sumgrades, qa.timefinish, qa.timestart, qa.timefinish - qa.timestart AS duration  FROM {user} u
+                  JOIN {role_assignments} ra ON ra.userid = u.id
+             LEFT JOIN {offlinequiz_results} qa ON u.id = qa.userid AND qa.offlinequizid = :offlinequizid
+              WHERE ra.contextid IN (:ctx14,:ctx15,:ctx16) AND ra.roleid = :role17  AND qa.userid IS NOT NULL
+                                AND qa.status = 'complete'  ORDER BY u.lastname, u.id 
+[16-Apr-2018 06:10:41 America/New_York] SELECT CONCAT(u.id, '#', COALESCE(qa.usageid, 0)) AS uniqueid,
+        qa.id AS resultid, u.id, qa.usageid, qa.offlinegroupid, qa.status,
+        u.id AS userid, u.firstname, u.lastname,
+        u.alternatename, u.middlename, u.firstnamephonetic, u.lastnamephonetic,
+        u.picture, u.idnumber,
+        qa.sumgrades, qa.timefinish, qa.timestart, qa.timefinish - qa.timestart AS duration  FROM {user} u
+                  JOIN {role_assignments} ra ON ra.userid = u.id
+             LEFT JOIN {offlinequiz_results} qa ON u.id = qa.userid AND qa.offlinequizid = :offlinequizid
+              WHERE ra.contextid IN (:ctx14,:ctx15,:ctx16) AND ra.roleid = :role17  ORDER BY u.lastname, u.id 
+[16-Apr-2018 07:20:11 America/New_York] SELECT CONCAT(u.id, '#', COALESCE(qa.usageid, 0)) AS uniqueid,
+        qa.id AS resultid, u.id, qa.usageid, qa.offlinegroupid, qa.status,
+        u.id AS userid, u.firstname, u.lastname,
+        u.alternatename, u.middlename, u.firstnamephonetic, u.lastnamephonetic,
+        u.picture, u.idnumber,
+        qa.sumgrades, qa.timefinish, qa.timestart, qa.timefinish - qa.timestart AS duration  FROM {user} u
+                  JOIN {role_assignments} ra ON ra.userid = u.id
+             LEFT JOIN {offlinequiz_results} qa ON u.id = qa.userid AND qa.offlinequizid = :offlinequizid
+              WHERE ra.contextid IN (:ctx14,:ctx15,:ctx16) AND ra.roleid = :role17  AND qa.userid IS NOT NULL
+                                AND qa.status = 'complete'  ORDER BY u.lastname, u.id 
+[16-Apr-2018 07:20:14 America/New_York] SELECT CONCAT(u.id, '#', COALESCE(qa.usageid, 0)) AS uniqueid,
+        qa.id AS resultid, u.id, qa.usageid, qa.offlinegroupid, qa.status,
+        u.id AS userid, u.firstname, u.lastname,
+        u.alternatename, u.middlename, u.firstnamephonetic, u.lastnamephonetic,
+        u.picture, u.idnumber,
+        qa.sumgrades, qa.timefinish, qa.timestart, qa.timefinish - qa.timestart AS duration  FROM {user} u
+                  JOIN {role_assignments} ra ON ra.userid = u.id
+             LEFT JOIN {offlinequiz_results} qa ON u.id = qa.userid AND qa.offlinequizid = :offlinequizid
+              WHERE ra.contextid IN (:ctx14,:ctx15,:ctx16) AND ra.roleid = :role17  AND qa.userid IS NOT NULL
+                                AND qa.status = 'complete'  ORDER BY u.lastname, u.id 
+[16-Apr-2018 07:20:17 America/New_York] SELECT CONCAT(u.id, '#', COALESCE(qa.usageid, 0)) AS uniqueid,
+        qa.id AS resultid, u.id, qa.usageid, qa.offlinegroupid, qa.status,
+        u.id AS userid, u.firstname, u.lastname,
+        u.alternatename, u.middlename, u.firstnamephonetic, u.lastnamephonetic,
+        u.picture, u.idnumber,
+        qa.sumgrades, qa.timefinish, qa.timestart, qa.timefinish - qa.timestart AS duration  FROM {user} u
+                  JOIN {role_assignments} ra ON ra.userid = u.id
+             LEFT JOIN {offlinequiz_results} qa ON u.id = qa.userid AND qa.offlinequizid = :offlinequizid
+              WHERE ra.contextid IN (:ctx14,:ctx15,:ctx16) AND ra.roleid = :role17  AND qa.userid IS NOT NULL
+                                AND qa.status = 'complete'  ORDER BY u.lastname, u.id 
+[16-Apr-2018 07:20:21 America/New_York] SELECT CONCAT(u.id, '#', COALESCE(qa.usageid, 0)) AS uniqueid,
+        qa.id AS resultid, u.id, qa.usageid, qa.offlinegroupid, qa.status,
+        u.id AS userid, u.firstname, u.lastname,
+        u.alternatename, u.middlename, u.firstnamephonetic, u.lastnamephonetic,
+        u.picture, u.idnumber,
+        qa.sumgrades, qa.timefinish, qa.timestart, qa.timefinish - qa.timestart AS duration  FROM {user} u
+                  JOIN {role_assignments} ra ON ra.userid = u.id
+             LEFT JOIN {offlinequiz_results} qa ON u.id = qa.userid AND qa.offlinequizid = :offlinequizid
+              WHERE ra.contextid IN (:ctx14,:ctx15,:ctx16) AND ra.roleid = :role17  ORDER BY u.lastname, u.id 
